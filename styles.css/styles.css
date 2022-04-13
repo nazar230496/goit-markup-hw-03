@@ -38,7 +38,9 @@ body {
 
 }
 .container {
-  width: 1200px;
+  width: 1230px;
+padding-left: 15;
+padding-right: 15;
   margin: 0 auto;
   outline: 2px solid red;
 }
