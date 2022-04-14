@@ -59,8 +59,17 @@ body {
     color:var(--logo-color)
 }
         /* навигация по сайту */
+        .site-nav {
+          display: flex;
+        }
+        .site-nav .nav-iteam + .nav-iteam  {
+          margin-left: 50px;
+        }
+       
 .link-nav {
-
+display: block;
+padding-top: 32px;
+padding-bottom: 32px;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.33;
@@ -113,6 +122,7 @@ text-transform: uppercase;
 color: var(--second-text-color);
 }
 .main-btn {
+  display: inline-block;
   border: 0px;
   text-align: center;
 border-radius: 4px;
@@ -189,9 +199,10 @@ color: var(--accent-color);
 .footer-logo{
     color: var(--second-text-color);
 }
- .iteam {
-   margin-bottom: 9px;
+ .iteam + .iteam {
+   margin-top: 9px;
  }
+
   .footer-address {
 font-family: "Raleway",sans-serif;
 font-style: normal;
