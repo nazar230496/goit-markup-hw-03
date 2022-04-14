@@ -19,13 +19,19 @@
  }
  ul, ol {
    margin: 0;
-   padding-left: o;
+   padding-left: 0;
  }
 body {
   margin: 0 auto;
     color: var(--primery-text-color);
     font-family: "Roboto",sans-serif;
     font-size: 14px;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid red;
 }
 .scrip {
   display: none;
@@ -37,13 +43,7 @@ body {
     list-style: none;
 
 }
-.container {
-  width: 1230px;
-padding-left: 15;
-padding-right: 15;
-  margin: 0 auto;
-  outline: 2px solid red;
-}
+
       /* логотип */
    
 .logo {
@@ -97,18 +97,24 @@ color: var(--primery-text-color);
          /* main */
 .main-bg {
  background: var(--footer-color);
-
+text-align: center;
  }
  .main-title { 
+   margin-bottom: 30px;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-text-align: center;
 color: var(--second-text-color);
 }
 .main-btn {
+  border: 0px;
+  text-align: center;
+border-radius: 4px;
+padding: 10px 32px;
+min-width: 200px;
+margin-bottom: 294px;
 font-weight: 700;
 font-size: 16px;
 cursor: pointer;
@@ -116,6 +122,9 @@ line-height: 1.87;
 letter-spacing: 0.06em;
 color: var(--second-text-color);
 background: var(--accent-color);
+}
+.workexamples-bg {
+  background-color: #E5E5E5;
 }
 .main-list {
 font-size: 14px;
