@@ -95,6 +95,10 @@ color: var(--primery-text-color);
    color:var(--accent-color); 
 }
          /* main */
+ .section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+         }
 .main-bg {
  background: var(--footer-color);
 text-align: center;
@@ -114,7 +118,6 @@ color: var(--second-text-color);
 border-radius: 4px;
 padding: 10px 32px;
 min-width: 200px;
-margin-bottom: 294px;
 font-weight: 700;
 font-size: 16px;
 cursor: pointer;
@@ -127,12 +130,14 @@ background: var(--accent-color);
   background-color: #E5E5E5;
 }
 .main-list {
+
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--primery-text-color); 
 }
 .main-subtitle {
+  margin-bottom: 10px;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.33;
@@ -141,6 +146,8 @@ text-transform: uppercase;
 color: var(--title-text-color);
 }
 .main-heading {
+  
+  margin-bottom: 50px;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
@@ -161,9 +168,14 @@ letter-spacing: 0.03em;
 color: var(--primery-text-color);
 
 }
-   /* Футер */
+/* Footer */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
     background: var(--footer-color);
+}
+.logo {
+  margin-bottom: 20px;
 }
 .footer-logo {
 
@@ -177,10 +189,9 @@ color: var(--accent-color);
 .footer-logo{
     color: var(--second-text-color);
 }
-  /* Footer */
-  .address {
-   
-}
+ .iteam {
+   margin-bottom: 9px;
+ }
   .footer-address {
 font-family: "Raleway",sans-serif;
 font-style: normal;
@@ -189,12 +200,13 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--second-text-color);
   }
-  .footer-link { 
+  .footer-link, .footer-link-mail  { 
 font-size: 14px;
 font-style: normal;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
+  }
   }
    /* страница портфолио */
    .portfolio-btn {
