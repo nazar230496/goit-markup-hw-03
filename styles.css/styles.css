@@ -31,6 +31,8 @@ body {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   outline: 2px solid red;
 }
 .scrip {
@@ -46,7 +48,14 @@ body {
 
       /* логотип */
    
-.logo {
+.logo { 
+  /* fless */
+padding-top: 24px;
+padding-bottom: 25px;
+margin-right: 93px;
+
+
+  display: block;
   font-family: "Raleway",
   sans-serif;
   font-weight: 700;
@@ -59,15 +68,37 @@ body {
     color:var(--logo-color)
 }
         /* навигация по сайту */
-        .site-nav {
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+ .header-nav  {
+   display: flex;
+ }
+.adress-nav {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  margin-left: auto;
+}
+  .adress-nav .adress-iteam+.adress-iteam {
+    margin-left: 50px;
+  }
+        .site-nav { 
           display: flex;
-        }
-        .site-nav .nav-iteam + .nav-iteam  {
-          margin-left: 50px;
-        }
-       
+          padding-top: 32px;
+          padding-bottom: 32px;
+}
+.site-nav .nav-iteam + .nav-iteam  {
+      margin-left: 50px;
+    
+}
+
+    
 .link-nav {
-display: block;
+  
 padding-top: 32px;
 padding-bottom: 32px;
 font-weight: 500;
@@ -83,6 +114,8 @@ color:var(--accent-color);
  
          /* почта и телефон шапка */
  .mail-nav {
+
+   display: block;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.33;
@@ -94,6 +127,7 @@ color: var(--primery-text-color);
     color:var(--accent-color);
 } 
 .tel-nav {
+display: block;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.33;
@@ -109,6 +143,8 @@ color: var(--primery-text-color);
   padding-bottom: 94px;
          }
 .main-bg {
+  padding-top: 200px;
+  padding-bottom: 200px;
  background: var(--footer-color);
 text-align: center;
  }
@@ -184,7 +220,15 @@ color: var(--primery-text-color);
   padding-bottom: 60px;
     background: var(--footer-color);
 }
-.logo {
+.logo-ft {
+  display: block;
+  font-family: "Raleway",
+  sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color:var(--accent-color);
   margin-bottom: 20px;
 }
 .footer-logo {
