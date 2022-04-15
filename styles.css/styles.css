@@ -80,8 +80,7 @@ margin-right: 93px;
    display: flex;
  }
 .adress-nav {
-  padding-top: 32px;
-  padding-bottom: 32px;
+
   display: flex;
 }
   .adress-nav .adress-iteam+.adress-iteam {
@@ -115,7 +114,8 @@ color:var(--accent-color);
  
          /* почта и телефон шапка */
  .mail-nav {
-
+padding-top: 32px;
+padding-bottom: 32px;
    display: block;
 font-weight: 500;
 font-size: 14px;
@@ -128,6 +128,8 @@ color: var(--primery-text-color);
     color:var(--accent-color);
 } 
 .tel-nav {
+  padding-top: 32px;
+  padding-bottom: 32px;
 display: block;
 font-weight: 500;
 font-size: 14px;
@@ -303,16 +305,21 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
   }
-  }
-   /* страница портфолио */
-   .portfolio-btn {
+                    /* страница портфолио */
+    .portfolio-nav {
+      display: flex;
+      justify-content: center;
+    }
+.portfolio-btn {
+  display: inline-block;
 font-weight: 500;
 font-size: 16px;
-line-height: 1.62;
+line-height: 26px;
 letter-spacing: 0.03em;
 color: var(--title-text-color);
 cursor: pointer;
    }
+  
    .portfolio-btn:hover, 
    .portfolio-btn:focus, 
    .portfolio-btn:active {
