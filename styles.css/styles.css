@@ -27,6 +27,11 @@ body {
     font-family: "Roboto",sans-serif;
     font-size: 14px;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .container {
   width: 1200px;
   margin-left: auto;
@@ -35,8 +40,17 @@ body {
   padding-right: 15px;
   outline: 2px solid red;
 }
-.scrip {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .link {
     text-decoration: none;
@@ -72,15 +86,13 @@ margin-right: 93px;
                              /* навигация по сайту */
 .main-nav {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-around;
 }
  .header-nav  {
    display: flex;
  }
 .adress-nav {
-
+margin-left: auto;
   display: flex;
 }
   .adress-nav .adress-iteam+.adress-iteam {
@@ -178,10 +190,7 @@ background: var(--accent-color);
 
 
                         /*  примери работ  */
-.workexamples-bg {
- padding-bottom: 0px;
-  background-color: #E5E5E5;
-}
+
 .main-list {
 display: flex;
 flex-wrap: wrap;
@@ -208,6 +217,7 @@ color: var(--title-text-color);
 }
                             /*  чим ми займаемся */
 .what-work {
+  padding-top: 0px;
   text-align: center;
 }
 .main-heading {
@@ -221,18 +231,19 @@ color: var(--title-text-color);
 }
 .main-img {
   display: flex;
-  max-width: 370px;
+ 
 }
 .main-img .iteam + .iteam {
   margin-left: 30px;
 }
                               /* наша команда */
 .team-main {
+  background: #F5F4FA;
   text-align: center;
 }
 .people-main {
   display: flex;
-  max-width: 270px;
+
 }
 .people-main .iteam + .iteam {
   margin-left: 30px;
@@ -287,11 +298,10 @@ color: var(--accent-color);
     color: var(--second-text-color);
 }
  .footer-list .address-item + .address-item {
-   padding-top: 9px;
+   margin-top: 9px;
  }
 
   .footer-address {
-font-family: "Raleway",sans-serif;
 font-style: normal;
 font-size: 14px;
 line-height: 1.71;
